@@ -1,0 +1,2130 @@
+<!doctype html>
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>Project#0017</title>
+		
+		<!--- <script src="d3.js"></script>  -->
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+		
+
+		<style>
+
+			*{
+				margin:0;
+				padding:0;
+			}
+
+			
+			html{
+				height: 100%;
+				margin: 10px;
+				scroll-behavior: smooth;
+				/*border: 1px dotted white;*/
+			}
+
+			body{
+				height: 100%;
+				padding: 10px;
+				margin: 10px;
+				scroll-behavior: smooth;
+				/*border: 1px dotted greenyellow;*/
+				background: #010c16;
+			}
+
+			#graphic {
+				max-width:  1440px;
+				width: 100%; 
+				height:  100%;
+				position:  relative; 
+				margin:auto;
+				/*border: 1px solid rgb(12, 87, 90);*/
+			}
+			.container {
+				height: 100%;
+				width: 100%;
+				max-width: 300px;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				left: 1030px;
+				line-height: 1.7;
+				font-size: 12px;
+				/*border: 2px solid rgb(148, 21, 21); */
+			}
+			.container div {
+				height: 100%;
+				display: block;
+				padding: 0 20px;
+				padding-top: 100px;
+                color: rgb(204, 204, 204);
+				/*border: 1px dotted red;*/
+			}
+			.fixed {
+				position: fixed;
+				max-width: 500px;
+				height: 500px;
+				top: 50px;
+			}
+
+			.blue {
+				background-color: #3333cc;
+				color: white;
+				
+			}
+
+			.red {
+
+				background-color: rgb(201, 32, 83);
+				color: white;
+			}
+
+		</style>
+		
+	</head>
+
+			
+	<body>
+
+
+			<div id="graphic"> <!-- /graphic -->
+
+					<!-- svg -->
+					<div class="fixed">
+						<svg id="viz" width="100%" height="100%"></svg>
+					</div>
+				
+				<div class="container"> <!-- /container -->
+
+					<div id="div0">
+						<p>
+							This is an imaginary story that based on true facts and a real incident.
+						</p>
+					  </div>
+
+					  <div id="div1">
+						<p>
+							My <strong class="blue">Blue country</strong>, I missed your charming color that has been faded away. I missed your quiet night. I missed your blue sky. I missed that scent of blueness flowing within your air.
+						</p>
+					  </div>
+
+					  <div id="div2">
+						  <p>
+							  This blueness that has been gradually displaced by <strong class="red">shades of red</strong> because of war. <br/><br/>No matter how it was begun. No matter what were the causes. What I was recognizing there is only the redness that overwhelmed our towns and roads, our buildings and homes. That redness that roiled our soil and water, our plants and air. That redness that crawled in daylight without timidity to pigment everything even our bodies and faces, and deeply mixed with our hopes and dreams.
+						  </p>
+					  </div>
+
+					  <div id="div3">
+						<p>
+							For most of us, fleeing this suffering was the only blue hope, which survived that red beast and hid away inside our hearts. <br/><br/>On that night, I and others succeeded in crossing the roadblocks on our way toward the seashore, after our blue brave hope fought many aggressive wars inside our minds and hearts against every red Inhibitor. We hoped to be welcomed by our neighbors on the other side of the sea, but it seems it's not.
+						</p>
+					  </div>
+
+					  <div id="div4">
+						<p>
+							On that boat, I met people from different countries. They all hereafter their countries have been swept by different beasts. Some of them were telling the story of that grey beast. Others were whispering about a brown one. But I noticed those silent people with bowed down necks, whose I knew after they escaped the most terrifying one the black one.
+						</p>
+					  </div>
+
+					  <div id="div5">
+						<p>
+							Across all that sorrow and within such accumulated darkness, there were two blue stars still glowing and spreading hope among us. They were the eyes of that 3 years old boy who reminded me by my dear blue country.
+						</p>
+					  </div>
+
+					  <div id="div6">
+						<p>
+							Suddenly, after a few moments of silence from everybody, we heard the sound of the sea rising. Its waves began to wrestle, and this small piece of wood found no place to go except to sink attracting some of us with it down.
+						</p>
+					  </div>
+
+					  <div id="div7">
+						<p>
+							After one of my hardest moments struggling to survive, I waked up to find myself on that seashore, and this small body was lying beside me as if he was sleeping peacefully in his blue little bed. I cannot believe what had happened. I can not believe that those shiny blue eyes were closed forever and will not open again. It closed taking with them what rest from our blue hopes.
+						</p>
+					  </div>
+
+					  <div id="div8">
+						<p>
+							Time has passed but this picture never faded out of my memory. It says what eloquent words unable to say. It reveals the slope that mankind has reached so far.
+						</p>
+					 </div>
+
+
+
+
+
+					 <div id="div9">
+							<p>
+								It is just one story of many others. Stories of misery and hope. <br/>Stories of us ... The unwelcomed. 
+							</p>
+						 </div>
+
+					<div id="div10">
+							<p>
+								Over 5 years and 6 months, <br/>5,506 incidents have been recorded by IOM's Global Migration.
+							</p>
+					 </div>
+
+					 <div id="div11">
+							<p>
+								Total number of migrants and refugees that have died or missed crossing the borders is 32,175.
+							</p>
+					 </div>
+						  
+					 <div id="div12">
+							<p>
+								The number of dead or missing per incident was 1 person at least, and this number extended to reach 1,022 persons at most.
+							</p>
+					 </div>
+
+					 <div id="div13">
+							<p>
+								The highest total death per year occurred during 2016.<br/>
+								However, the highest total incidents per year happened throughout 2018. <br/><br/>
+								With general average 5.8 dead/missing per incident.
+							</p>
+					 </div>
+
+					 <div id="div14">
+							<p>
+								Within and between Africa, Asia, Europe, Amirecas; those incidents have happened over time.
+							</p>
+					 </div>
+
+					 <div id="div15">
+							<p>
+								The Mediterranean is considered the hottest spot over all other locations. In order, the US-Mexico border is glowing because of repeated cases there together with different parts of Africa especially across Egypt, Sudan, and Libya.
+							</p>
+					 </div>
+
+					 <div id="div16">
+							<p>
+								All incidents could be clustered into 10 main regions. Africa, Middle East, Mediterranean, Europe, Asia, US-Mexico Border, Central America, Caribbean, North America, and South America. 
+							</p>
+					 </div>
+
+					 <div id="div17">
+							<p>
+								Almost 60% of all deaths or disappeared happened in the Mediterranean. It is the death sea. Then Africa comes after with 21% of the total.
+							</p>
+					 </div>
+
+					 <div id="div18">
+							<p>
+								When we have a look at the causes, we can see that most of the deaths occurred because of drowning with 64% of the total, then other causes as starvation, dehydration, sickness, accidents come after.
+							</p>
+					 </div>
+
+					 <div id="div19">
+							<p>
+								These are some facts about those who are suffering crossing the borders and you may not notice them from your location safe inside your blue country, inside your blue home. Giving them a hand may help.
+							</p>
+					 </div>
+
+					 <div id="div20">
+							<p>
+								Again, i can not forget this picture that tells everything.
+							</p>
+					 </div>
+
+					 <div id="div21">
+							<p>
+								Lastly, here is a message from those who left. Left their homes. Left their families. Left their countries, Left their world. Message from the unwelomed.
+							</p>
+					 </div>
+				</div> <!-- /container -->
+				  
+				  
+			
+				  
+			</div> <!-- /graphic -->
+
+
+
+
+
+		<script>
+
+// https://bl.ocks.org/baronwatts/2a50ae537d7c46670aa5eb30254ef751
+
+// -------------------------------------- color theme
+
+		// color theme
+
+        var main_col = "#bd1349";
+
+        var title_col = "#bd1349";
+        var subtitle_col = "#ffffff";
+
+        var white_col = "#ffffff";
+
+        var light_col = "#ff5468";
+        var moderate_col = "#ff1450";
+        var dark_col = "#b00c36";  //8c082a
+
+        var border_col = "#870e34";  //870e34  910f38  9c103c
+        var back_col = "#010c16"; //000000   010c16 blue
+        var black_col = "#1f0409"; // #1a0308 #24040b #1f040a
+
+		var blue_col = "#4242ff";
+		
+		//var button_over_col = "#bd1349"
+		var button_over_col = "#010c16";
+
+		var country_over_col = "#30060e";
+
+		var tooltip_col = "#e0e0e0";
+
+// -------------------------------------- main settings
+
+		// Background
+			d3.select("body").style("background", back_col) // 330510  420515
+			.style("font-family","Verdana, Geneva, sans-serif")
+			//.attr("height", "700px"); 
+
+
+		// Set the dimensions of the canvas / graph
+			var margin = { top: 20, right: 20, bottom: 50, left: 20 },
+				width = 1000 - margin.left - margin.right,
+				height = 650 - margin.top - margin.bottom;
+
+		// time variables
+		var in_delay = 10;
+		var tot_delay = 5505 * in_delay;
+		var main_dots_time = 3000;
+		var contour_dots_time1 = 600;
+		var contour_dots_time2 = 1000;
+		var contour_dots_delay = 3;
+
+
+// -------------------------------------- main div for svg
+
+		//adding div element
+        var div_main = d3.select("body").append("div")
+			.attr("id", "div_main")
+			//.style("width","900px")
+			//.style("height","800px")
+			//.style("border", "1px solid red")
+			.style("margin","20px auto");
+
+// -------------------------------------- svg board
+
+		// Adds the svg canvas
+			var svg = d3.select("svg")
+			.attr('width', width + margin.left + margin.right)
+			.attr('height', height + margin.top + margin.bottom)
+			.style("display","block")
+			.style("margin","10px auto")
+			//.style("border", "1px solid grey") // should be removed after finish
+			.style("background", back_col) // #420515  #4f071a"
+			.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+			//.attr("shape-rendering", "geometricPrecision"); // auto - optimizeSpeed - crispEdges - geometricPrecision
+
+// --------------------------------------------------------------------------------------------------
+
+
+// -------------------------------------- geo data
+
+
+	// Get the geo data
+	
+	// the file we will use
+	const geoFile = "https://raw.githubusercontent.com/mohamadwaked/classico/master/world-lowres.geojson";
+	const countriesFile = "https://raw.githubusercontent.com/mohamadwaked/classico/master/un_regions.csv";
+	const dataFile = "https://raw.githubusercontent.com/mohamadwaked/classico/master/p0017_dataset.csv";
+
+	
+	// choose a projection
+	const projection = d3.geoNaturalEarth1() //d3.geoNaturalEarth1() d3.geoMercator()
+						.scale(190)
+						.translate([(width/2)-40, (height/2)+10]); 
+	
+	// create a path generator function initialized with the projection
+	const geoPath = d3.geoPath().projection(projection);
+	
+	// store global objects here
+	var map = {}; 
+	var dataset = {};
+
+	const popScale = d3.scaleSequentialSqrt(d3.interpolateBlues);
+
+// -------------------------------------- size, color, & opacity scale
+
+	// Area Scale
+	var areaScale = d3.scaleSqrt()
+			.domain([0,800])
+			.range([0.6,7]);
+
+	// Circle Scale
+	var circleScale = d3.scaleSqrt()
+			.domain([0,10])
+			.range([0,5]);
+
+	// Color Scale
+	var colorScale = d3.scaleLinear()
+			.domain([0,800])
+			.range([moderate_col, light_col]) ;
+
+	// Opacity Scale
+	var opacityScale = d3.scaleLinear()
+			.domain([0,600])
+            .range([0.3, 0.9]); // when using colors the scale has to start at 0.4
+            
+
+	// Projections Opacity Scale
+	var projOpacScale = d3.scaleLinear()
+			.domain([0,500])
+			.range([0.1, 0.9]); // when using colors the scale has to start at 0.4
+			
+
+	// Projection Color Scale
+	var projColorScale = d3.scaleLinear()
+			.domain([0,300])
+			.range(["grey", white_col]) ;
+            
+    // -------------------------------------- regions color scale
+		//category colors
+		// ref: https://htmlcolorcodes.com/color-chart/
+
+		var regions_en = [ 
+        "Mediterranean",
+        "Africa",
+        "Asia",
+        "US-Mexico Border",
+        "Central America",
+        "Caribbean",
+        "Europe",
+        "Middle East",
+        "South America",
+        "North America"
+        ];
+		
+		
+		var regions_cols = [
+        "#5555ed", //blue
+        "#FF6699", //pink
+        "#faff69", //yellow   
+        "#1f9c8b", //darkgreen
+        "#FFA726", //orange   
+		"#58d651", //green
+		"#87c7ff", //lightblue
+		"#CC66FF", //violet
+		"#D3D3D3", //grey
+		"#BC8F8F" //brown
+		];
+		
+
+
+		var regionScale = d3.scaleOrdinal()
+		.domain(regions_en)
+		.range(regions_cols);
+		
+    // -------------------------------------- cause of death color scale
+		//cause of death colors
+		// ref: https://htmlcolorcodes.com/color-chart/
+
+		var causes_en = [ 
+		"Drowning",
+		"Starvation / Dehydration",
+		"Sickness",
+		"Unknown / Other",
+		"Accident",
+		"Mixed",
+		"Shooting",
+		"Harsh Conditions",
+		"Asphyxiation",
+		"Violence",
+        ];
+		
+		var causes_cols = [
+		"#5555ed", //blue 
+        "#58d651", //green
+		"#faff69", //yellow  
+		"#CC66FF", //violet
+        "#FFA726", //orange
+        "#D3D3D3", //grey
+		"#FF6699", //pink
+		"#BC8F8F", //brown
+		"#87c7ff", //lightblue
+		"#1f9c8b" //darkgreen
+        ];
+
+
+		var causeScale = d3.scaleOrdinal()
+		.domain(causes_en)
+        .range(causes_cols);
+
+// -------------------------------------- time parse, formate, & scale
+
+	// Parse date
+	var parseTime = d3.timeParse("%e-%b-%Y");
+	//console.log(parseTime("9-Feb-1917")); // test the formula
+				
+	// Formate date
+	var formatTime = d3.timeFormat("%e-%-m-%Y");
+	//console.log(formatTime(new Date)); // test the formula
+
+
+	// Axis scale
+	var timeScale = d3.scaleTime()
+				.domain([parseTime("1-Jan-2014"), parseTime("26-Jun-2019")])
+				//.domain(d3.extent(data, d => d.date_en))
+				.range([0, width-70]);
+
+	var timeAxis = d3.axisBottom(timeScale)
+				.ticks(7)
+				.tickSizeInner(10)
+				.tickSizeOuter(0)
+				.tickPadding(2);
+
+
+	
+	var regionScale2 = d3.scaleBand()
+					.domain(regions_en)
+					.range([0, width-70]); 
+
+	var regionAxis = d3.axisBottom(regionScale2)
+					.ticks(10)
+					.tickSizeInner(10)
+					.tickSizeOuter(0)
+					.tickPadding(2);
+
+
+	var causeScale2 = d3.scaleBand()
+					.domain(causes_en)
+					.range([0, width-70]); 
+
+	var causeAxis = d3.axisBottom(causeScale2)
+					.ticks(10)
+					.tickSizeInner(10)
+					.tickSizeOuter(0)
+					.tickPadding(2);
+
+
+// -------------------------------------- get data files
+
+	// please consider that all the following code is inside the function
+
+	Promise.all([
+		d3.json(geoFile), 
+		d3.csv(countriesFile, function(row){
+			return {
+				population: +row.Pop_2016,
+				area: +row.Area_km2,
+          		hdi: +row.HDI_2017,
+          		code: row.Code
+			}
+		}),
+		d3.csv(dataFile, function(death){
+			return {
+				serial: +death.serial,
+				region: death.collapsed_region,
+				cause: death.cause_of_death,
+				collap_cause: death.collapsed_cause,
+				coord: [+death.lon, +death.lat],
+				death: +death.total_death_missing,
+				date: parseTime(death.date),
+				random: +death.random,
+				year_avg: +death.year_avg,
+				year_incidents: +death.year_incidents,
+				year_death: +death.year_death,
+				region_avg: +death.region_avg,
+				region_incidents: +death.region_incidents,
+				region_death: +death.region_death,
+				cause_avg: +death.cause_avg,
+				cause_incidents: +death.cause_incidents,
+				cause_death: +death.cause_death
+			}
+		})
+	])
+	.then(function([shapes, countries, data]){
+		map.features = shapes.features; // save data in global context
+		dataset = data;
+		map.features.forEach(function(d) { // each feature (country)
+			const entry = countries.filter(t => t.code == d.id)[0];
+			if(entry) {
+                   d.properties.population = entry.population;
+                   d.properties.hdi = entry.hdi;
+				   d.properties.area = entry.area;
+				   d.properties.density = entry.population / entry.area; // new property
+
+			}
+		})
+		//console.log(dataset)
+		//console.log(map.features)
+		//console.log(map.features[0].properties.name)
+		
+
+		popScale.domain(d3.extent(map.features, d => d.properties.density))
+
+
+		 // ----------------------------------------------------- scenes elements
+
+		// ----------------------------------------------------- scene #01
+        var scene0 = svg.append('image')
+				.attr('xlink:href', "http://alhadaqa.com/wp-content/uploads/2019/08/scene_00.png")
+				.attr('width', 900)
+				.attr('height', 600)
+				.style("opacity", 1)
+				.attr("transform", "translate(50,20)");	
+	   
+		
+		var scene1 = svg.append('image')
+				.attr('xlink:href', "http://alhadaqa.com/wp-content/uploads/2019/08/scene_01.png")
+				.attr('width', 900)
+				.attr('height', 600)
+				.style("opacity", 0)
+				.attr("transform", "translate(50,20)");	
+
+
+		// ----------------------------------------------------- scene #02
+
+        var scene2 = svg.append('image')
+				.attr('xlink:href', "http://alhadaqa.com/wp-content/uploads/2019/08/scene_02.png")
+				.attr('width', 900)
+				.attr('height', 600)
+				.style("opacity", 0)
+				.attr("transform", "translate(50,20)");	
+
+
+
+		// ----------------------------------------------------- scene #03
+
+		var scene3 = svg.append('image')
+				.attr('xlink:href', "http://alhadaqa.com/wp-content/uploads/2019/08/scene_03.png")
+				.attr('width', 900)
+				.attr('height', 600)
+				.style("opacity", 0)
+				.attr("transform", "translate(50,20)");	
+
+
+
+		// ----------------------------------------------------- scene #04
+
+		var scene4 = svg.append('image')
+				.attr('xlink:href', "http://alhadaqa.com/wp-content/uploads/2019/08/scene_04.png")
+				.attr('width', 900)
+				.attr('height', 600)
+				.style("opacity", 0)
+				.attr("transform", "translate(70,20)");	
+
+				
+		// ----------------------------------------------------- scene #05
+
+		var scene5 = svg.append('image')
+				.attr('xlink:href', "http://alhadaqa.com/wp-content/uploads/2019/08/scene_05_v2.png")
+				.attr('width', 900)
+				.attr('height', 600)
+				.style("opacity", 0)
+				.attr("transform", "translate(70,20)");	
+
+
+
+		// ----------------------------------------------------- scene #06
+
+		var scene6 = svg.append('image')
+				.attr('xlink:href', "http://alhadaqa.com/wp-content/uploads/2019/08/scene_06.png")
+				.attr('width', 900)
+				.attr('height', 600)
+				.style("opacity", 0)
+				.attr("transform", "translate(70,20)");	
+
+
+
+		// ----------------------------------------------------- scene #07
+
+		var scene7 = svg.append('image')
+				.attr('xlink:href', "http://alhadaqa.com/wp-content/uploads/2019/08/scene_07.png")
+				.attr('width', 900)
+				.attr('height', 600)
+				.style("opacity", 0)
+				.attr("transform", "translate(50,20)");	
+
+
+
+		// ----------------------------------------------------- scene #08
+
+		var scene8 = svg.append('image')
+				.attr('xlink:href', "http://alhadaqa.com/wp-content/uploads/2019/08/scene_08_v2.png")
+				.attr('width', 900)
+				.attr('height', 600)
+				.style("opacity", 0)
+				.attr("transform", "translate(100,10)");	
+
+
+		var scene_final = svg.append('image')
+				.attr('xlink:href', "http://alhadaqa.com/wp-content/uploads/2019/08/scenes_final.png")
+				.attr('width', 900)
+				.attr('height', 600)
+				.style("opacity", 0)
+				.attr("transform", "translate(100,10)");	
+
+
+		// ----------------------------------------------------- shapes to use
+
+
+		    // map shapes
+			var map_graph = svg.selectAll("path.country") // CSS styles defined above
+            .data(map.features)
+            .enter().append("path")
+            .attr("class","country")
+            .attr("d", geoPath)
+            .style("fill", black_col)  //3d0715  2e0510
+            //.style("fill", d => popScale(d.properties.population))
+            //.style("fill", d => popScale(d.properties.density))
+            .style("stroke", border_col)  // light #b00c36 dark #850827
+            .style("stroke-width", "0.4")
+			.style("opacity", 0);
+			
+			map_graph.style("visibility", "hidden");
+
+
+			 // Cover the lower area with rect
+			var rect_top = svg.append("rect")
+			.attr("x", 0)
+			.attr("y", 500)
+			.attr("width",width)
+			.attr("height",200)
+			.style("fill", back_col)
+			
+			var rect_bottom = svg.append("rect")
+			.attr("x", 0)
+			.attr("y", 0)
+			.attr("width",width)
+			.attr("height",50)
+			.style("fill", back_col);
+
+			rect_top.style("opacity", 0);
+			rect_bottom.style("opacity", 0);
+
+
+		// ----------- timeline 
+
+		// Draw the Axies
+		var timeline = svg.append("g").classed("axe",true)
+			.attr("transform", "translate(50 , 630)")
+			.call(timeAxis)
+			.style("opacity", 0);
+
+
+
+		// Draw the Region Axies
+		var region_axis = svg.append("g")
+				.classed("axe",true)
+				.attr("transform", "translate(50 , 630)")
+				.call(regionAxis)
+				.style("opacity", 0);
+
+		// Draw the cause Axies
+		var cause_axis = svg.append("g")
+				.classed("axe",true)
+				.attr("transform", "translate(50 , 630)")
+				.call(causeAxis)
+				.style("opacity", 0);
+
+
+		// start circle
+		timeline.append("circle")
+		.classed("start_circle", true)
+		.attr("cx", timeScale(parseTime("1-Jan-2014")))
+		.attr("cy", 0)
+		.attr("r", 2)
+		.style("stroke", blue_col)
+		.style("fill", white_col);
+
+		// end circle
+		timeline.append("circle")
+		.classed("end_circle", true)
+		.attr("cx", timeScale(parseTime("26-Jun-2019")))
+		.attr("cy", 0)
+		.attr("r", 2)
+		.style("stroke", blue_col)
+		.style("fill", white_col);
+
+
+		// format the domain
+		d3.selectAll("g.axe .domain, g.axe g.tick line")
+		.style("stroke", moderate_col)
+		.style("opacity", 0.08);
+		//.style("stroke-dasharray", "3 6");
+
+		// make centered ticks
+		d3.selectAll("g.axe g.tick line")
+		.attr("y1", -3)
+		.attr("y2", 4)
+		.style("opacity", 0.5)
+		.style("stroke", moderate_col);
+
+		// adjust font size and opacity
+		d3.selectAll("g.axe g.tick text")
+		.style("font-size", "8px")
+		.style("color", moderate_col)
+		.style("opacity", 0.6);
+
+		// ------------ circle groups
+
+		// secondry group circles
+		var secondary_circles = svg.selectAll("circle.secondary_circles")
+		.data(dataset)  //.filter(d => d.tens == "1910-1920")
+		.enter().append("circle")
+       		.classed("secondary_circles", true)
+			//.attr("cx", d => 52.5+(regionScale2(d.region))+Math.random()*80)
+			//.attr("cy", d =>  630 + (Math.random() * d.region_death / -50))
+			.attr("cx", function (d) { return projection(d.coord)[0]; })
+			.attr("cy", function (d) { return projection(d.coord)[1]; })
+			.attr("r", 0)
+			//.attr("r", d => areaScale(d.death))
+			.style("stroke", d => regionScale(d.region))
+			.style("fill", d => regionScale(d.region))
+			.style("stroke-width", 0.4)
+			.style("stroke-opacity", d => opacityScale(d.death)+0.1)
+			.style("fill-opacity", d => opacityScale(d.death)-0.1)
+	
+			//region_axis.style("visibility", "hidden");
+
+
+		// main group of circles
+		var primary_circles = svg.selectAll("circle.primary_circles")
+		.data(dataset)  //.filter(d => d.tens == "1910-1920")
+		.enter().append("circle")
+        .classed("primary_circles", true)
+            .attr("cx", (width/2)+20)
+			.attr("cy", 320)
+			//.attr("cx", d => 250+(Math.random() * 500))
+            //.attr("cy", d =>  75+(Math.random() * 500))
+            .attr("r", 0)
+            //.style("stroke", white_col)
+			//.attr("stroke-width", 0.4)
+			.style("stroke-width", 0.4)
+			.style("stroke-opacity", d => opacityScale(d.death)+0.1)
+			//.style("stroke-opacity", 0.7)
+            //.style("fill", white_col)
+			.style("fill-opacity", d => opacityScale(d.death)-0.1)
+			//.style("fill-opacity",0.5)
+            .style("fill", d => colorScale(d.death))
+			.style("stroke", d => colorScale(d.death))
+			//.transition()
+			//.duration((d,i) => i *Math.random()*2)
+
+
+
+		// Show Text
+		var show_text = svg.append("text")
+				.text("5,506 incidents")
+				.attr("x", 500)
+				.attr("y", 325)
+				.style("fill", moderate_col)
+				.style("font","42px Verdana")
+				.style("alignment-baseline", "middle")
+				.style("text-align", "center")
+				.style("text-anchor", "middle") //start - middle - end
+				.style("opacity", 0);
+
+
+		// Show Text 2
+		var show_text_2 = svg.append("text")
+				.text("5,506 incidents")
+				.attr("x", 500)
+				.attr("y", 325)
+				.style("fill", moderate_col)
+				.style("font","12px Verdana")
+				.style("alignment-baseline", "middle")
+				.style("text-align", "center")
+				.style("text-anchor", "middle") //start - middle - end
+				.style("opacity", 0);
+
+
+
+		// Show Line
+		var sep_line = svg.append("line")
+		.classed("sep_line", true)
+		.attr("x1", 50+timeScale(parseTime("18-Apr-2015")))
+		.attr("y1", 610)
+		.attr("x2", 50+timeScale(parseTime("18-Apr-2015")))
+		.attr("y2", 610)
+		.style("stroke", white_col)
+		.style("stroke-width", 0.3)
+		.style("opacity", 0);
+
+
+
+		// Annotation
+		var set1 = [
+			{text: "5,287", x: 100, y: 5287},   
+			{text: "6,584", x: 200, y: 6584},
+			{text: "8,070 dead or missing", x: 300, y: 8070},
+			{text: "6,279", x: 400, y: 6279},
+			{text: "4,737", x: 500, y: 4737},
+			{text: "1,218", x: 600, y: 1218}
+		];
+
+		var annot1 = svg.selectAll("text.annot_1")
+		.data(set1)
+		.enter().append("text")
+		.classed("annot_1", true)
+		.attr("x", (d,i) => -30 +((i+1)*160) )   //-100
+		.attr("y", d=> height -(d.y/30))
+		.text(d=> d.text)
+		.style("fill", main_col)
+		.style("font","11px Verdana")
+		.style("alignment-baseline", "middle")
+		.style("text-align", "center")
+		.style("text-anchor", "middle") //start - middle - end
+		.style("opacity", 0);
+
+
+		// regions
+		var set2 = [
+			{text: "58% _ 18,515 Dead/Missing", x: 100, y: 18515, color:regions_cols[0]},   
+			{text: "21% _ 6,761", x: 200, y: 6761, color:regions_cols[1]},
+			{text: "8% _ 2,580", x: 300, y: 2580, color:regions_cols[2]},
+			{text: "6.4% _ 2,069", x: 400, y: 2069, color:regions_cols[3]},
+			{text: "2% _ 643", x: 500, y: 643, color:regions_cols[4]},
+			{text: "1.9% _ 610", x: 600, y: 610, color:regions_cols[5]},
+			{text: "1.4% _ 453", x: 700, y: 453, color:regions_cols[6]},
+			{text: "1.4% _ 450", x: 800, y: 450, color:regions_cols[7]},
+			{text: "0.3% _ 92", x: 900, y: 92, color:regions_cols[8]},
+			{text: "0.01% _ 2", x: 1000, y: 2, color:regions_cols[9]}
+		];
+
+		var annot2 = svg.selectAll("text.annot_2")
+		.data(set2)
+		.enter().append("text")
+		.classed("annot_2", true)
+		.attr("x", (d,i) => 10 +((i+1)*88.5) )   //-100
+		.attr("y", d=> height -(d.y/60) + 10)
+		.text(d=> d.text)
+		.style("fill", d=> d.color)
+		.style("fill-opacity", 0.5)
+		.style("font","9px Verdana")
+		.style("alignment-baseline", "middle")
+		.style("text-align", "center")
+		.style("text-anchor", "middle") //start - middle - end
+		.style("opacity", 0);
+
+
+
+		// causes
+		var set3 = [
+			{text: "64% _ 20,696 Dead/Missing", x: 100, y: 20696, color:causes_cols[0]},   
+			{text: "7.0% _ 2,239", x: 200, y: 2239, color:causes_cols[1]},  
+			{text: "6.7% _ 2,167", x: 300, y: 2167, color:causes_cols[2]},  
+			{text: "6.7% _ 2,166", x: 400, y: 2166, color:causes_cols[3]},  
+			{text: "5.5% _ 1,767", x: 500, y: 1767, color:causes_cols[4]},  
+			{text: "3.2% _ 1,029", x: 600, y: 1029, color:causes_cols[5]},  
+			{text: "2.2% _ 701", x: 700, y: 701, color:causes_cols[6]},  
+			{text: "2.1% _ 679", x: 800, y: 679, color:causes_cols[7]},  
+			{text: "1.2% _ 391", x: 900, y: 391, color:causes_cols[8]},  
+			{text: "1.1% _ 340", x: 1000, y: 340, color:causes_cols[9]}
+		];
+
+		var annot3 = svg.selectAll("text.annot_3")
+		.data(set3)
+		.enter().append("text")
+		.classed("annot_3", true)
+		.attr("x", (d,i) => 10 +((i+1)*88.5) )   //-100
+		.attr("y", d=> height -(d.y/60)+10)
+		.text(d=> d.text)
+		.style("fill", d=> d.color)
+		.style("fill-opacity", 0.5)
+		.style("font","9px Verdana")
+		.style("alignment-baseline", "middle")
+		.style("text-align", "center")
+		.style("text-anchor", "middle") //start - middle - end
+		.style("opacity", 0);
+
+
+
+
+	 // -------------------------------------- screen scrolling functions
+
+	 	var screen0 = function(){
+
+				scene0.style("visibility", "visible");
+				scene1.style("visibility", "visible");
+				scene2.style("visibility", "visible");
+				scene3.style("visibility", "visible");
+				scene4.style("visibility", "visible");
+				scene5.style("visibility", "visible");
+				scene6.style("visibility", "visible");
+				scene7.style("visibility", "visible");
+				scene8.style("visibility", "visible");
+				
+				scene0
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+
+				scene1
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+				rect_top.style("opacity", 0);
+				rect_bottom.style("opacity", 0);
+				
+			}
+		var screen1 = function(){
+
+				scene0.style("visibility", "visible");
+				scene1.style("visibility", "visible");
+				scene2.style("visibility", "visible");
+				scene3.style("visibility", "visible");
+				scene4.style("visibility", "visible");
+				scene5.style("visibility", "visible");
+				scene6.style("visibility", "visible");
+				scene7.style("visibility", "visible");
+				scene8.style("visibility", "visible");
+				
+
+				scene0
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+
+				scene1
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+
+				scene2
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+				rect_top.style("opacity", 0);
+				rect_bottom.style("opacity", 0);
+
+			}
+
+		var screen2 = function(){
+				scene0.style("visibility", "hidden");
+				scene1.style("visibility", "visible");
+				scene2.style("visibility", "visible");
+				scene3.style("visibility", "visible");
+				scene4.style("visibility", "visible");
+				scene5.style("visibility", "visible");
+				scene6.style("visibility", "visible");
+				scene7.style("visibility", "visible");
+				scene8.style("visibility", "visible");
+
+				scene1
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+
+				scene2
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+				scene3
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+				rect_top.style("opacity", 0);
+				rect_bottom.style("opacity", 0);
+			}
+			
+
+		var screen3 = function(){
+
+				scene0.style("visibility", "hidden");
+				scene1.style("visibility", "hidden");
+				scene2.style("visibility", "visible");
+				scene3.style("visibility", "visible");
+				scene4.style("visibility", "visible");
+				scene5.style("visibility", "visible");
+				scene6.style("visibility", "visible");
+				scene7.style("visibility", "visible");
+				scene8.style("visibility", "visible");
+
+				scene2
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+
+				scene3
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+
+				scene4
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+				rect_top.style("opacity", 0);
+				rect_bottom.style("opacity", 0);
+
+			}
+
+
+		var screen4 = function(){
+
+				scene0.style("visibility", "hidden");
+				scene1.style("visibility", "hidden");
+				scene2.style("visibility", "hidden");
+
+				scene3.style("visibility", "visible");
+				scene4.style("visibility", "visible");
+				scene5.style("visibility", "visible");
+				scene6.style("visibility", "visible");
+				scene7.style("visibility", "visible");
+				scene8.style("visibility", "visible");
+
+
+				scene3
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+
+				scene4
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+
+				scene5
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+				rect_top.style("opacity", 0);
+				rect_bottom.style("opacity", 0);
+
+			}
+
+
+			var screen5 = function(){
+
+				scene0.style("visibility", "hidden");
+				scene1.style("visibility", "hidden");
+				scene2.style("visibility", "hidden");
+				scene3.style("visibility", "hidden");
+
+				scene4.style("visibility", "visible");
+				scene5.style("visibility", "visible");
+				scene6.style("visibility", "visible");
+				scene7.style("visibility", "visible");
+				scene8.style("visibility", "visible");
+
+
+
+				scene4
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+
+				scene5
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+				scene6
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+				rect_top.style("opacity", 0);
+				rect_bottom.style("opacity", 0);
+
+			}
+
+			var screen6 = function(){
+
+				scene0.style("visibility", "hidden");
+				scene1.style("visibility", "hidden");
+				scene2.style("visibility", "hidden");
+				scene3.style("visibility", "hidden");
+				scene4.style("visibility", "hidden");
+
+				scene5.style("visibility", "visible");
+				scene6.style("visibility", "visible");
+				scene7.style("visibility", "visible");
+				scene8.style("visibility", "visible");
+
+
+				scene5
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+
+				scene6
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+				scene7
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+				rect_top.style("opacity", 0);
+				rect_bottom.style("opacity", 0);
+
+			}
+
+
+			var screen7 = function(){
+				scene0.style("visibility", "hidden");
+				scene1.style("visibility", "hidden");
+				scene2.style("visibility", "hidden");
+				scene3.style("visibility", "hidden");
+				scene4.style("visibility", "hidden");
+				scene5.style("visibility", "hidden");
+
+				scene6.style("visibility", "visible");
+				scene7.style("visibility", "visible");
+				scene8.style("visibility", "visible");
+
+				scene6
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+				scene7
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+				scene8
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+
+				primary_circles
+				.attr("cx", (width/2)+20)
+				.attr("cy", 320)
+				.attr("r", 0)
+
+				rect_top.style("opacity", 0);
+				rect_bottom.style("opacity", 0);
+
+
+
+			}
+
+			// the boy
+			var screen8 = function(){
+
+				scene0.style("visibility", "hidden");
+				scene1.style("visibility", "hidden");
+				scene2.style("visibility", "hidden");
+				scene3.style("visibility", "hidden");
+				scene4.style("visibility", "hidden");
+				scene5.style("visibility", "hidden");
+				scene6.style("visibility", "hidden");
+
+				scene7.style("visibility", "visible");
+				scene8.style("visibility", "visible");
+
+
+				scene7
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+				scene8
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+
+				primary_circles
+				.transition()
+				.duration((d,i) => i *Math.random())
+				.ease(d3.easeCubicInOut)
+				.attr("cx", (width/2)+20)
+				.attr("cy", 320)
+				.transition()
+				.duration(200)
+				.ease(d3.easeCubicInOut)
+				.attr("r", 0)
+
+
+				rect_top.style("opacity", 0);
+				rect_bottom.style("opacity", 0);
+
+
+			}
+
+
+			// one story of many others
+			var screen9 = function(){
+
+				scene0.style("visibility", "hidden");
+				scene1.style("visibility", "hidden");
+				scene2.style("visibility", "hidden");
+				scene3.style("visibility", "hidden");
+				scene4.style("visibility", "hidden");
+				scene5.style("visibility", "hidden");
+				scene6.style("visibility", "hidden");
+				scene7.style("visibility", "hidden");
+
+				scene8.style("visibility", "visible");
+
+				scene8
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+
+				primary_circles
+				.transition()
+				.duration(500)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.attr("r", 0.5)
+				.transition()
+				.duration((d,i) => i *Math.random()*2)
+				.delay(1000)
+				.ease(d3.easeCubicInOut)
+				.attr("r", 0.5)
+				.attr("cx", d => 150+(Math.random() * 700))
+				.attr("cy", d =>  75+(Math.random() * 500))
+				
+
+				timeline
+				.transition()
+				.duration(500)
+				.delay(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0);
+
+
+				show_text
+				.transition()
+				.duration(1000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0);
+
+				rect_top.style("opacity", 0);
+				rect_bottom.style("opacity", 0);
+
+			}
+
+
+
+			// Over 5 years
+			var screen10 = function(){
+				scene0.style("visibility", "hidden");
+				scene1.style("visibility", "hidden");
+				scene2.style("visibility", "hidden");
+				scene3.style("visibility", "hidden");
+				scene4.style("visibility", "hidden");
+				scene5.style("visibility", "hidden");
+				scene6.style("visibility", "hidden");
+				scene7.style("visibility", "hidden");
+				//scene8.style("visibility", "hidden");
+
+
+				timeline
+				.transition()
+				.duration(1000)
+				.delay(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1);
+
+
+				primary_circles
+				.transition()
+				.duration((d,i) => i *Math.random()*2)
+				.delay(100)
+				.ease(d3.easeCubicInOut)
+				.attr("r", 0.5)
+				.attr("cx", d => 50+timeScale(d.date))
+				.attr("cy", d =>  550 + (Math.random() * 80));
+
+
+				show_text
+				.transition()
+				.duration(1000)
+				.delay(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+				.transition()
+				.duration(10)
+				.text("5,506 incidents")
+				.transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+
+
+				rect_top.style("opacity", 0);
+				rect_bottom.style("opacity", 0);
+				
+
+			}
+
+			// Total number of migrants and refugees
+			var screen11 = function(){
+
+				primary_circles
+				.transition()
+				.duration((d,i) => i *Math.random()*5)
+				.delay(100)
+				.ease(d3.easeCubicInOut)
+				.attr("r", d => areaScale(d.death))
+				.attr("cx", d => 50+timeScale(d.date))
+				.attr("cy", d =>  550 + (Math.random() * 80));
+
+				show_text
+				.transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+				.transition()
+				.duration(2000)
+				.delay(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+				.text("32,175 dead or missing");
+
+
+				show_text_2
+				.transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+
+				sep_line
+				.transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+				
+				rect_top.style("opacity", 0);
+				rect_bottom.style("opacity", 0);
+
+			}
+
+			// Incident of drowning 1,022 Migrants
+			var screen12 = function(){
+
+				primary_circles
+				.transition()
+				.duration((d,i) => i *Math.random()*2)
+				.delay(100)
+				.ease(d3.easeCubicInOut)
+				.attr("r", d => areaScale(d.death))
+				.attr("cx", d => 50+timeScale(d.date))
+				.attr("cy", d =>  550 + (d.random * 80));
+
+				
+				show_text
+				.transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+				
+				
+				show_text_2
+				.transition()
+				.duration(500)
+				.ease(d3.easeCubicInOut)
+				.style("font","12px Verdana")
+				.style("opacity", 0)
+				.transition()
+				.duration(10)
+				.attr("x", 500)
+				.attr("y", 325)
+				.transition()
+				.duration(2000)
+				.delay(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+				.text("Incident of drowning 1,022 Migrants and Refugees in their attempt to cross the mediterranian, April 2015.")
+
+
+				sep_line
+				.transition()
+				.duration(500)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+				.transition()
+				.duration(10)
+				.attr("x1", 50+timeScale(parseTime("18-Apr-2015")))
+				.attr("y1", 605)
+				.attr("x2", 50+timeScale(parseTime("18-Apr-2015")))
+				.attr("y2", 605)
+				.transition()
+				.duration(1000)
+				.delay(500)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+				.attr("x1", 200)
+				.attr("y1", 335)
+
+
+				annot1
+				.transition()
+				.duration(1000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+				rect_top.style("opacity", 0);
+				rect_bottom.style("opacity", 0);
+			}
+
+
+			// The densest year. 1,509 incidents have been reported.
+			var screen13 = function(){
+
+				timeline
+				.transition()
+				.duration(1000)
+				.delay(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1);
+
+				primary_circles
+				.transition()
+				.duration((d,i) => i *Math.random()*2)
+				.delay(100)
+				.ease(d3.easeCubicInOut)
+				.attr("r", d => areaScale(d.death))
+				.style("fill", d => colorScale(d.death))
+				.style("stroke", d => colorScale(d.death))
+				.attr("cx", d => 50+timeScale(d.date))
+				.attr("cy", d =>  630 + (Math.random() * d.year_death  / -30));
+				
+				
+				show_text_2
+				.transition()
+				.duration(500)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+				.transition()
+				.duration(10)
+				.attr("x", 720)
+				.attr("y", 250)
+				.transition()
+				.duration(2000)
+				.delay(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+				.text("The densest year. 1,509 incidents have been reported.");
+
+
+				sep_line
+				.transition()
+				.duration(500)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+				.transition()
+				.duration(10)
+				.attr("x1", 750)
+				.attr("y1", 500)
+				.attr("x2", 750)
+				.attr("y2", 500)
+				.transition()
+				.duration(2000)
+				.delay(500)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+				.attr("x1", 685)
+				.attr("y1", 260)
+
+
+				annot1
+				.transition()
+				.duration(1000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+
+				map_graph
+				.transition()
+				.duration(2000)
+				.delay(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+				.transition()
+				.duration(10)
+				.style("visibility", "hidden")
+				
+			}
+
+			// circles fly to the locations on map
+			var screen14 = function(){
+
+				timeline
+				.transition()
+				.duration(1000)
+				.delay(3000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0);
+
+
+				primary_circles
+				.transition()
+				.duration((d,i) => i *Math.random()*2)
+				.delay(100)
+				.ease(d3.easeCubicInOut)
+				.attr("r", d => areaScale(d.death))
+				.attr("cx", function (d) { return projection(d.coord)[0]; })
+				.attr("cy", function (d) { return projection(d.coord)[1]; })
+				.style("fill", d => colorScale(d.death))
+				.style("stroke", d => colorScale(d.death))
+				.style("opacity", 1)
+
+
+				show_text_2
+				.transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+				.transition()
+				.duration(10)
+				.attr("x", 700)
+				.attr("y", 250)
+				.transition()
+				.duration(2000)
+				.delay(500)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+				.text(" ")
+				
+
+				sep_line
+				.transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+				.transition()
+				.duration(10)
+				.attr("x1", 655)
+				.attr("y1", 265)
+				.attr("x2", 750)
+				.attr("y2", 500)
+				.transition()
+				.duration(2000)
+				.delay(500)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+
+				annot1
+				.transition()
+				.duration(1000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+
+				map_graph
+				.transition()
+				.duration(2000)
+				.delay(2000)
+				.ease(d3.easeCubicInOut)
+				.style("visibility", "visible")
+				.style("opacity", 1)
+				
+				rect_top.style("opacity", 1);
+				rect_bottom.style("opacity", 1);
+
+
+				secondary_circles.attr("r", 0);
+
+
+				show_text
+				.transition()
+				.duration(1000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+			}
+
+			// hot areas
+			var screen15 = function(){   
+
+				timeline
+				.transition()
+				.duration(1000)
+				.delay(3000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0);
+
+
+				primary_circles
+				.transition()
+				.duration((d,i) => i *Math.random()*2)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.attr("cx", function (d) { return projection(d.coord)[0]; })
+				.attr("cy", function (d) { return projection(d.coord)[1]; })
+				.style("opacity", 0.12)
+				.style("fill", white_col)
+				.style("stroke", white_col)
+
+
+				secondary_circles
+				.transition()
+				.duration(1000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("fill", d => colorScale(d.death))
+				.style("stroke", d => colorScale(d.death))
+				.attr("r", 0)
+
+				show_text
+				.transition()
+				.duration(1000)
+				.delay(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+				.transition()
+				.duration(10)
+				.text("Hot Spots")
+				.transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+			}
+
+
+			// All incidents locations can be clustered in 10 main regions.
+			var screen16 = function(){
+
+
+				timeline
+				.transition()
+				.duration(1000)
+				.delay(3000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1);
+				
+				region_axis
+				.transition()
+				.duration(1000)
+				.delay(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0);
+
+		
+				primary_circles
+				.transition()
+				.duration((d,i) => i *Math.random()*2)
+				.delay(2000)
+				.ease(d3.easeCubicInOut)
+				.attr("cx", d => 50+timeScale(d.date))
+				.attr("cy", d =>  550 + (d.random * 80))
+				.style("opacity", 1)
+				.style("stroke", d => regionScale(d.region))
+				.style("fill", d => regionScale(d.region))
+
+
+
+				secondary_circles
+				.transition()
+				.duration(1000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("stroke", d => regionScale(d.region))
+				.style("fill", d => regionScale(d.region))
+				.attr("r", d => areaScale(d.death))
+
+				annot2
+				.transition()
+				.duration(2000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+				show_text
+				.transition()
+				.duration(1000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+
+			}
+
+
+			// bar chart for regions
+			var screen17 = function(){
+
+				timeline
+				.transition()
+				.duration(1000)
+				.delay(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0);
+				
+				region_axis
+				.transition()
+				.duration(1000)
+				.delay(3000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1);
+
+				cause_axis
+				.transition()
+				.duration(1000)
+				.delay(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0);
+
+
+		
+				primary_circles
+				.transition()
+				.duration((d,i) => i *Math.random()*2)
+				.delay(2000)
+				.ease(d3.easeCubicInOut)
+				.attr("cx", d => 50+(regionScale2(d.region))+Math.random()*90)
+				.attr("cy", d =>  630 + (Math.random() * d.region_death / -60))
+				.style("stroke", d => regionScale(d.region))
+				.style("fill", d => regionScale(d.region))
+
+
+				secondary_circles
+				.transition()
+				.duration(1000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("stroke", d => regionScale(d.region))
+				.style("fill", d => regionScale(d.region))
+				.attr("r", d => areaScale(d.death))
+
+				annot2
+				.transition()
+				.duration(2000)
+				.delay(3000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+				annot3
+				.transition()
+				.duration(2000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+			}
+
+			// bar chart for causes
+			var screen18 = function(){
+
+				rect_top
+				.transition()
+				.duration(1000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+
+				rect_bottom
+				.transition()
+				.duration(1000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1);
+
+				map_graph
+				.transition()
+				.duration(2000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+				region_axis
+				.transition()
+				.duration(1000)
+				.delay(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0);
+				
+				cause_axis
+				.transition()
+				.duration(1000)
+				.delay(3000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1);
+		
+				primary_circles
+				.transition()
+				.duration((d,i) => i *Math.random()*2)
+				.delay(2000)
+				.ease(d3.easeCubicInOut)
+				.style("stroke", d => causeScale(d.collap_cause))
+				.style("fill", d => causeScale(d.collap_cause))
+				.attr("cx", d => 50+(causeScale2(d.collap_cause))+Math.random()*90)
+				.attr("cy", d =>  630 + (Math.random() * d.cause_death / -60))
+				.attr("r", d => areaScale(d.death))
+
+
+				secondary_circles
+				.transition()
+				.duration(1000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+				.transition()
+				.duration(3000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("stroke", d => causeScale(d.collap_cause))
+				.style("fill", d => causeScale(d.collap_cause))
+				.attr("r", d => areaScale(d.death))
+
+				annot2
+				.transition()
+				.duration(2000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+				annot3
+				.transition()
+				.duration(2000)
+				.delay(2000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+				show_text
+				.transition()
+				.duration(1000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+
+			}
+
+
+			// facts
+			var screen19 = function(){
+
+				scene8
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+
+				rect_top
+				.transition()
+				.duration(2000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+
+				rect_bottom
+				.transition()
+				.duration(2000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0);
+
+
+				map_graph
+				.transition()
+				.duration(2000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+
+				secondary_circles
+				.transition()
+				.duration(2000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+				primary_circles
+				.transition()
+				.duration((d,i) => i *Math.random())
+				.ease(d3.easeCubicInOut)
+				.attr("cx", d => 150+(Math.random() * 700))
+				.attr("cy", d =>  75+(Math.random() * 500))
+				.style("fill", d => colorScale(d.death))
+				.style("stroke", d => colorScale(d.death))
+				.transition()
+				.duration((d,i) => i *Math.random())
+				.ease(d3.easeCubicInOut)
+				.attr("r", 0)
+
+
+				annot3
+				.transition()
+				.duration(2000)
+				.delay(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+				cause_axis
+				.transition()
+				.duration(1000)
+				.delay(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0);
+
+				show_text
+				.transition()
+				.duration(1000)
+				.delay(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+				.transition()
+				.duration(10)
+				.text("Just Facts")
+				.transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+			}
+
+			// picture again
+			var screen20 = function(){
+				
+				scene8
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+				scene_final
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+				show_text
+				.transition()
+				.duration(1000)
+				.delay(0)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+
+			}
+
+			// message
+			var screen21 = function(){
+				
+				scene8
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 0)
+
+				scene_final
+                .transition()
+				.duration(1000)
+				.ease(d3.easeCubicInOut)
+				.style("opacity", 1)
+
+			}
+// --------------------------------------
+
+		//waypoints scroll constructor
+		function scroll(n, offset, func1, func2){
+			return new Waypoint({
+				element: document.getElementById(n),
+				handler: function(direction) {
+				direction == 'down' ? func1() : func2();
+				},
+				//start 75% from the top of the div
+				offset: offset
+			});
+			};
+
+
+
+			//triger these functions on page scroll
+			new scroll('div1', '40%', screen1, screen0);
+			new scroll('div2', '40%', screen2, screen1);
+			new scroll('div3', '40%', screen3, screen2);
+			new scroll('div4', '40%', screen4, screen3);
+			new scroll('div5', '40%', screen5, screen4);
+			new scroll('div6', '40%', screen6, screen5);
+			new scroll('div7', '40%', screen7, screen6);
+			new scroll('div8', '40%', screen8, screen7);
+			new scroll('div9', '40%', screen9, screen8);
+			new scroll('div10', '40%', screen10, screen9);
+			new scroll('div11', '40%', screen11, screen10);
+			new scroll('div12', '40%', screen12, screen11);
+			new scroll('div13', '40%', screen13, screen12);
+
+			new scroll('div14', '40%', screen14, screen13);
+			new scroll('div15', '40%', screen15, screen14);
+			new scroll('div16', '40%', screen16, screen15);
+			new scroll('div17', '40%', screen17, screen16);
+			new scroll('div18', '40%', screen18, screen17);
+			new scroll('div19', '40%', screen19, screen18);
+			new scroll('div20', '40%', screen20, screen19);
+			new scroll('div21', '40%', screen21, screen20);
+
+			
+
+
+
+			//start grid on page load
+			screen0();
+
+
+		
+    });
+    
+// --------------------------------------------------------------------------------------------------
+
+
+// --------------------------------------
+
+		
+		</script>
+	</body>
+</html>
