@@ -3,7 +3,8 @@ importScripts("https://d3js.org/d3-dispatch.v1.min.js");
 importScripts("https://d3js.org/d3-quadtree.v1.min.js");
 importScripts("https://d3js.org/d3-timer.v1.min.js");
 importScripts("https://d3js.org/d3-force.v1.min.js");
-importScripts("d3.js");
+importScripts("https://d3js.org/d3.v5.min.js");
+
 
 
 
